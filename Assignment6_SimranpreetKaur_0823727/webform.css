@@ -1,0 +1,162 @@
+/*****************************************
+
+Author: Simranpreet Kaur
+Student id: 0823727
+
+***************************************/
+
+
+/****************************************************************
+
+==================
+Table of Contents
+==================
+1. HTML Body Styles
+2. Heading Styles
+3. Main Body Styles
+4. Footer Styles
+
+
+
+**********************************/
+
+/****************************  MAIN STYLES  ***********************************/
+
+/**********************
+1. HTML Body Styles
+**********************/
+
+body {
+    background-color: rgba(35, 243, 8, 0.85);
+}
+
+/**********************
+2. Heading Styles
+**********************/
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4em;
+    color: black;
+    margin:4px;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color:black;
+    margin:4px;
+}
+
+/**********************
+3. Main Body Styles
+**********************/
+
+section {
+    margin: 5px;
+}
+
+label {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(13, 2, 59);
+    display:block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 70%;
+}
+input[type="submit"] {
+    height: 50px;
+    width: 10%;
+    align-self: center;
+    background-color: rgb(235, 22, 22);
+    border-radius: 150px;
+    color: white;
+    font-weight:10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+
+input, textarea {
+    margin: 15px 0px;
+    padding: 7px;
+    border-radius: 5px;
+}
+.radio-group {
+    display: flex;
+    align-items: center;
+  }
+input[type="radio"]:checked + label:before {
+    background-color: #333;
+  }
+  
+  input[type="radio"]:focus + label:before {
+    outline: 2px solid #333;
+  }
+
+
+/**********************
+4. Footer Styles
+**********************/
+
+footer {
+    height:48px;  
+    background-color: rgb(20, 99, 13, 0.3)
+}
+
+footer p {
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(49, 25, 25);
+    text-align: center;
+}
+
+/****************************  MEDIA STYLES - Tablet and Desktop (above 601px)  ***********************************/
+
+@media screen and (min-width: 610px)
+{ 
+    input[type="submit"]{
+        width: 20%;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 25px;
+    }
+}
+
+/****************************  MEDIA STYLES - Mobile-First Approach (up to 600px width) ***********************************/
+
+@media screen and (max-width: 600px)
+{  
+    body {
+        background-color: rgba(29, 5, 236, 0.85);
+        min-width: 480px;
+    }
+h1{
+ font-size: 70px;
+}
+h2{
+    font-size: 55px;
+}
+    label {
+        font-size: 35px;
+    }
+    input[type="submit"]{
+        margin-top: 35px;
+        cursor: pointer;
+        width:30%;
+        flex-direction: column;
+        font-size: 25px;
+    }
+
+    footer p {
+        font-size: 35px;
+    }
+
+}
